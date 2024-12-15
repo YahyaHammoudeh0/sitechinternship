@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Habit Reminder</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body class="p-4">
+    <h1 class="text-2xl mb-4">Habit Reminder</h1>
+
+    <!-- Simple Form -->
+    <form id="habitForm" class="mb-4">
+        <input 
+            type="text" 
+            id="habitName" 
+            placeholder="Enter habit name"
+            class="border p-2 mr-2"
+            required
+        >
+        <input 
+            type="time" 
+            id="reminderTime"
+            class="border p-2 mr-2"
+            required
+        >
+        <button 
+            type="button" class="bg-blue-500 text-white p-2"
+            id="addHabit"
+        >
+            Add Habit
+        </button>
+    </form>
+
+    <!-- Habits List -->
+    <div id="habitsList">
+        <!-- Habits will appear here -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
